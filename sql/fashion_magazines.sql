@@ -6,4 +6,3 @@ inner join customers c on c.customer_id=o.customer_id
 where o.order_status = 'unpaid'
 and s.description = 'Fashion Magazine'
 group by Customer
---test
