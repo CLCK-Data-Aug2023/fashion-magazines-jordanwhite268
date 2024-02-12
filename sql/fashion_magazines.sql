@@ -1,5 +1,5 @@
 select c.customer_name as Customer,
-    printf('$%.2f', (sum((s.price_per_month * s.subscription_length)))) as amount_due
+    printf('$%.2f', (sum((s.price_per_month * s.subscription_length)))) as Amount_Due
 from orders o
 inner join subscriptions s on s.subscription_id=o.subscription_id
 inner join customers c on c.customer_id=o.customer_id
